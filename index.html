@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style.css" type="text/css"/>
+  <link rel="stylesheet" href="./utils.css" type="text/css"/>
+  <title>Aman PORTFOLIO WebSite</title>
+</head>
+<body>
+  <main>
+    <nav>
+      <img class="logo" src="./images/logo.png" />
+      <ion-icon class="menuIcon" onclick="alert('Fuck You!')" name="menu-outline"></ion-icon>
+    </nav>
+    
+    <div class="section-1">
+      <p>Web/App Developer</p>
+      <h1>Hii, I'm <span class="cl-red">Aman</span><br/>Yadav From India</h1>
+    </div>
+    
+    
+    
+    <div class="about-section bg">
+      <div class="content">
+        <img src="./images/me.jpg">
+        <h1>About Me</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed nulla nibh, tincidunt sit amet sapien quis, elementum molestie tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris eleifend magna id ante convallis mattis. Quisque in sem tristique, dictum sapien et accumsan libero.</p>
+        
+        <div class="details-tab">
+          <p class="d-tab active" onclick="changeAboutTab('skill', this)">Skills</p>
+          <p class="d-tab" onclick="changeAboutTab('experience', this)">Experience</p>
+          <p class="d-tab" onclick="changeAboutTab('education', this)">Education</p>
+        </div>
+        
+        <div class="content-tab active" id="skill">
+          <ul>
+            <li><span>UI/UX</span><br/>Designing Web/App Interfaces</li>
+            <li><span>Web Development</span><br/>Web App Development</li>
+            <li><span>App Development</span><br/>Building Android/iOS Apps</li>
+          </ul>
+        </div>
+        
+         <div class="content-tab" id="experience">
+           <ul>
+             <li><span>2021 - Current</span><br />UI/UX Design Training at ET Institute</li>
+             <li><span>2019 - 2021</span><br />Team lead at StarApp LLC.</li>
+             <li><span>2017 - 2019</span><br />Internship at ekart eCommerce.</li>
+           </ul>
+         </div>
+         
+          <div class="content-tab" id="education">
+            <ul>
+              <li><span>2016</span><br />UI/UX Design Training at ET Institute</li>
+              <li><span>2016</span><br />MBA from MIT Bangalore</li>
+              <li><span>2014</span><br />BBA from ISM Bangalore</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    <div class="services-section">
+      <div class="content">
+        <h1>My Services</h1>
+        <div class="card">
+          <ion-icon name="code-slash-outline"></ion-icon>
+          <h1>Web Design</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis</p>
+          <span>Learn more</span>
+        </div>
+        
+        <div class="card">
+          <ion-icon name="crop-outline"></ion-icon>
+          <h1>UI/UX Design</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis</p>
+          <span>Learn more</span>
+        </div>
+        
+        <div class="card">
+          <ion-icon name="logo-apple-appstore"></ion-icon>
+          <h1>App Design</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis</p>
+          <span>Learn more</span>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="work-section">
+      <div class="content">
+        <h1>My Work</h1>
+        <div class="card-sec">
+          <div class="card">
+            <img src="./images/work-1.png"/>
+            <div class="cont">
+              <h2>Social Media App</h2>
+              <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+              <ion-icon name="link-outline"></ion-icon>
+            </div>
+          </div>
+          
+          
+          <div class="card">
+            <img src="./images/work-2.png" />
+            <div class="cont">
+              <h2>Misic App</h2>
+              <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+              <ion-icon name="link-outline"></ion-icon>
+            </div>
+          </div>
+          
+          
+          <div class="card">
+            <img src="./images/work-3.png" />
+            <div class="cont">
+              <h2>Online Shopping App</h2>
+              <p>The app connects you yo the talented people around the world, Download it from play store.</p>
+              <ion-icon name="link-outline"></ion-icon>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <button onclick="myAlert('Fuck You', 300)" class="seeMoreBtn">See More</button>
+    </div>
+    
+    
+  </main>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="./script.js"></script>
+</html>

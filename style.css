@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Poppins', cursive;
+}
+
+body{
+  max-height: 100vh;
+  min-height: 100vh;
+  background: url("./images/phone-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+main{
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo{
+  width: 120px;
+}
+
+.menuIcon{
+  font-size: 40px;
+  color: white;
+}
+
+.section-1{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.section-1 > p{
+  color: #ababab;
+  font-size: 15px;
+}
+
+.section-1 > h1{
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+.about-section{
+  padding-top: 10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section .content {
+  width: 80%;
+  overflow: hidden;
+}
+
+.about-section .content > img{
+  aspect-ratio: 1/1.3;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1px;
+  transition: .5s;
+}
+
+.about-section .content > img:hover{
+  transform: scale(1.1)
+}
+
+.about-section .content > h1{
+  margin-top: 20px;
+}
+
+.about-section .content > p{
+  color: #ababab;
+  font-size: 14px;
+}
+
+.details-tab{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.details-tab > p{
+  color: #ababab;
+  position: relative;
+  font-size: 18px;
+}
+
+.details-tab > p::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ff004f;
+  border-radius: 100px;
+  bottom: 0;
+  transition: width .5s;
+}
+
+.details-tab > p.active::before{
+  width: 70%;
+}
+
+
+
+.content-tab{
+  margin-top: 30px;
+  display: none;
+}
+
+.content-tab.active{
+  display: block;
+}
+
+.content-tab > ul{
+  list-style: none;
+}
+
+.content-tab > ul > li{
+  color: #ababab;
+}
+
+.content-tab > ul > li > span{
+  color: #b54769;
+}
+
+
+
+/* ----------- Services --------- */
+.services-section{
+  background: #080808;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.services-section .content .card:hover{
+   background: #ff004f;
+   transform: scale(1.1);
+}
+
+.services-section .content{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.services-section .content > h1{
+  margin-bottom: 10px;
+}
+
+.services-section .content .card > ion-icon{
+  font-size: 80px;
+}
+
+.services-section .content .card{
+  width: 100%;
+  background: #262626;
+  padding: 40px 30px;
+  border-radius: 10px;
+  transition: .5s;
+}
+
+.services-section .content .card > p{
+  margin-top: 15px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.work-section{
+  background: #080808;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.work-section .content{
+  width: 80%;
+}
+
+.work-section .content > h1{
+  margin-bottom: 30px;
+}
+
+.work-section .content > .card-sec{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.work-section .content > .card-sec > .card{
+  border-radius: 10px;
+  width: 100%;
+  aspact-ratio: 1/1.3;
+  position: relative;
+  overflow: hidden;
+}
+
+.work-section .content > .card-sec > .card > img{
+  width: 100%;
+  transition: transform .5s
+}
+
+.work-section .content > .card-sec > .card > .cont{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #ff004f, rgba(0, 0, 0, 0.6));
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  
+  
+  transform: translateY(100%);
+  transition: transform .5s;
+}
+
+.work-section .content > .card-sec > .card > .cont > h2{
+  margin-top: 50px;
+  font-size: 17px;
+}
+
+.work-section .content > .card-sec > .card > .cont > p{
+  font-size: 13px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.work-section .content > .card-sec > .card > .cont > ion-icon{
+  font-size: 30px;
+}
+
+.work-section .content > .card-sec > .card > img:hover{
+  transform: scale(1.1);
+}
+
+.work-section .content > .card-sec > .card > img:hover ~ .cont{
+  transform: translateY(0);
+}
+
+
+.seeMoreBtn{
+  font-size: 13px;
+  color: white;
+  border: 1px solid #ff004f;
+  padding: 10px 40px;
+  background: transparent;
+  border-radius: 5px;
+  margin: 10px 0;
+  transition: all .5s;
+}
+
+.seeMoreBtn:hover{
+  background: #ff004f;
+}
